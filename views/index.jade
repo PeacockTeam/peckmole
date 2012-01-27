@@ -1,0 +1,13 @@
+h1= title
+p Welcome to #{title}
+
+#left
+  ul#hosts
+    each host in hosts
+      li #{host}
+
+#middle
+  label Host:
+  input#host(onkeydown="if (event.keyCode == 13) $('#push').click()")
+  button#push Push
+  div#status
